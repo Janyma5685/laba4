@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Артемьев Артем Романович">
+  <meta name="keywords" content="HTML, CSS, новости, лабораторная работа">
+  <meta name="description" content="Страница новостей простого сайта">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Мой первый простой сайт</title>
+  <base href="./">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <h1><a href="index.html">Мой первый простой сайт</a></h1>
+    </div>
+
+    <div id="content">
+      <div id="left">
+        <h2>Навигация</h2>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <h2>Ссылки</h2>
+        <ul>
+          <li><a href="https://yandex.ru" target="_blank">Яндекс</a></li>
+          <li><a href="https://google.com" target="_blank">Google</a></li>
+        </ul>
+
+        <h2>Вход</h2>
+        <form action="index.html" method="post">
+          Пользователь:
+          <div align="right"><input name="login" type="text"></div>
+          Пароль:
+          <div align="right"><input name="pwd" type="password"></div>
+          <div align="right"><input name="ok" type="submit" value="Войти"></div>
+        </form>
+      </div>
+
+      <div id="right">
+        <h2>Новости</h2>
+        <p><b>Новость 1.</b> На сайте появилась главная страница с описанием проекта и назначением разделов.</p>
+        <p><b>Новость 2.</b> Добавлено меню навигации, которое позволяет переходить между страницами «Главная», «Новости» и «Контакты».</p>
+        <p><b>Новость 3.</b> Для оформления сайта подключён внешний файл стилей CSS. В нём заданы шапка, меню, блок контента и футер.</p>
+      </div>
+
+      <div style="clear: both;"></div>
+      <div id="footer">&copy; Артемьев Артем Романович</div>
+    </div>
+  </div>
+</body>
+</html>

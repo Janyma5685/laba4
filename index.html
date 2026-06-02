@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Артемьев Артем Романович">
+  <meta name="keywords" content="HTML, CSS, блочная компоновка, лабораторная работа, сайт">
+  <meta name="description" content="Лабораторная работа №4: простой сайт с блочной компоновкой и CSS">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Мой первый простой сайт</title>
+  <base href="./">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <h1><a href="index.html">Мой первый простой сайт</a></h1>
+    </div>
+
+    <div id="content">
+      <div id="left">
+        <h2>Навигация</h2>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <h2>Ссылки</h2>
+        <ul>
+          <li><a href="https://yandex.ru" target="_blank">Яндекс</a></li>
+          <li><a href="https://google.com" target="_blank">Google</a></li>
+        </ul>
+
+        <h2>Вход</h2>
+        <form action="index.html" method="post">
+          Пользователь:
+          <div align="right"><input name="login" type="text"></div>
+          Пароль:
+          <div align="right"><input name="pwd" type="password"></div>
+          <div align="right"><input name="ok" type="submit" value="Войти"></div>
+        </form>
+      </div>
+
+      <div id="right">
+        <h2>Главная</h2>
+        <p><b>Главная страница</b> — самая первая страница, которая появляется при заходе на сайт.</p>
+        <p>Главная страница есть у всех сайтов: от интернет-магазинов до форумов и личных блогов. Основная функция главной страницы — познакомить посетителя с содержанием сайта и помочь быстро перейти к нужным разделам.</p>
+        <p>Этот сайт создан в рамках лабораторной работы №4. В нём используется блочная компоновка: шапка сайта, левое меню, правый блок с основным содержимым и футер.</p>
+        <p>Оформление сайта вынесено в отдельный CSS-файл. Благодаря этому HTML-документы содержат структуру страницы, а внешний вид задаётся через каскадные таблицы стилей.</p>
+      </div>
+
+      <div style="clear: both;"></div>
+      <div id="footer">&copy; Артемьев Артем Романович</div>
+    </div>
+  </div>
+</body>
+</html>
